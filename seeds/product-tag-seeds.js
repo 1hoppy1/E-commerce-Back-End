@@ -1,7 +1,8 @@
-const { ProductTag } = require('../models');
+const {
+  ProductTag
+} = require('../models');
 
-const productTagData = [
-  {
+const productTagData = [{
     product_id: 1,
     tag_id: 6,
   },
