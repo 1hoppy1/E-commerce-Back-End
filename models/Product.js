@@ -29,6 +29,7 @@ Product.init({
       isDecimal: true
     }
   },
+
   stock: {
     type: DataTypes.INTEGER,
     allowNull: false,
@@ -38,14 +39,24 @@ Product.init({
       isNumeric: true
     }
   },
+  
   category_id: {
     type: DataTypes.INTEGER,
     references: {
       model: 'Category',
       key: 'id'
-    }
-    //references the "category" model's "id" ?????????????
-  }
+    }}
+  //   ,
+
+
+  //   //references the "category" model's "id" ?????????????
+  //   category_name: {
+  //     type: DataTypes.STRING,
+  //     references: {
+  //       model: 'Category',
+  //       key: 'category_name'
+  //     }
+  // }
 }, {
   sequelize,
   timestamps: false,
