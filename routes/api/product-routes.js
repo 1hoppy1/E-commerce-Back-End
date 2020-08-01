@@ -14,13 +14,21 @@ router.get('/', (req, res) => {
   // be sure to include its associated Category and Tag data
 
   //
-  Product.findAll()
-    .then(dbUserData => res.json(dbUserData))
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
+   Product.findAll({
+     include: [Category]
+   })
+     .then(dbUserData => res.json(dbUserData))
+     .catch(err => {
+       console.log(err);
+       res.status(500).json(err);
+     });
   //
+  //BCS ASK TA HELP PART 
+  //  Product.findAll()
+  //        .then(dbUserData => {
+  //            console.log("dbUserData: ", dbUserData)
+  //            res.json(dbUserData)
+  //        })
 });
 
 // get one product
@@ -64,8 +72,8 @@ router.post('/', (req, res) => {
   Product.create({
       product_name: req.body.product_name,
       price: req.body.price,
-      stock: req.body.stock,
-      tagIds: req.body.tagIds
+      stock: req.body.stock
+    //  tagIds: req.body.tagIds
     })
     //new from jim
     //noted out by jim -----    Product.create(req.body)
@@ -141,7 +149,7 @@ router.put('/:id', (req, res) => {
     })
     .then((updatedProductTags) => res.json(updatedProductTags))
     .catch((err) => {
-      // console.log(err);
+       console.log(err);
       res.status(400).json(err);
     });
 });

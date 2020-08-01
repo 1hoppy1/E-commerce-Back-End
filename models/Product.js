@@ -39,24 +39,18 @@ Product.init({
       isNumeric: true
     }
   },
-  
+
   category_id: {
     type: DataTypes.INTEGER,
     references: {
       model: 'Category',
       key: 'id'
-    }}
-  //   ,
+    }},
 
-
-  //   //references the "category" model's "id" ?????????????
-  //   category_name: {
-  //     type: DataTypes.STRING,
-  //     references: {
-  //       model: 'Category',
-  //       key: 'category_name'
-  //     }
-  // }
+  // tags: {
+  //   type: DataTypes.INTEGER
+  // }tags
+    
 }, {
   sequelize,
   timestamps: false,
