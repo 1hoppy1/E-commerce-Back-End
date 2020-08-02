@@ -2,6 +2,7 @@
 
 https://1hoppy1.github.io/E-commerce-Back-End/
 
+https://github.com/1hoppy1/E-commerce-Back-End
 ## Description 
 
 Walk Through Video1:
