@@ -4,11 +4,16 @@ https://1hoppy1.github.io/E-commerce-Back-End/
 
 ## Description 
 
-This application generates a readme file
+Walk Through Video1:
 
-<img src="/assets/images/Screenshot%20(47).png" />
-<img src="/assets/images/Screenshot%20(48).png" />
-<img src="/assets/images/Screenshot%20(49).png" />
+https://drive.google.com/file/d/1BjgVY1v3MwlH66-RAl3ggKxZKR46KI1r/view
+
+Walk Through Video2:
+
+https://drive.google.com/file/d/1SDiNlpyI7XA-SU9VKbkUlNmBSaVK_Blp/view
+
+
+Backend code for ecomerce site.
 
 ## Table of Contents
 
@@ -34,9 +39,7 @@ Use the command line prompt.
 
 For additional info about the license, click on the link (if available).
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
-
-other
+None
 
 ## Contributing
 
@@ -44,11 +47,9 @@ Send me Comments
 
 ## Tests
 
-Use a tester
+None
 
 ## Questions
-
-jimgit
 
 Comments, Questions, Concerns, Complaints? Send me an email.
 
@@ -56,4 +57,4 @@ jim@gmail.com
 
 ## Credits
 
-my mom
+my wife and mom

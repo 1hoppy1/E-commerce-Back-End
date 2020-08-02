@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 
   //
    Product.findAll({
-     include: [Category]
+     include: [Category, Tag]
    })
      .then(dbUserData => res.json(dbUserData))
      .catch(err => {
@@ -24,11 +24,11 @@ router.get('/', (req, res) => {
      });
   //
   //BCS ASK TA HELP PART 
-  //  Product.findAll()
-  //        .then(dbUserData => {
-  //            console.log("dbUserData: ", dbUserData)
-  //            res.json(dbUserData)
-  //        })
+  //  Product.findAll()
+  //        .then(dbUserData => {
+  //            console.log("dbUserData: ", dbUserData)
+  //            res.json(dbUserData)
+  //        })
 });
 
 // get one product
